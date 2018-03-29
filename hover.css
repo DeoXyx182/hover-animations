@@ -1,49 +1,40 @@
-/*font-family: 'Merienda', cursive;
-font-family: 'Allura', cursive;*/
-/*.content{
-	/*height: 100vh;
-	width: 100%;
-	transition: 1s; 
-	position: relative;
-}
-
-.lugar{
-	font-family: 'Merienda', cursive;
-	position: absolute;
-}
-.ciudad{
-	font-family: 'Allura', cursive;
-	position: absolute;
-}*/
-*{
+body{
+	height: 100%;
 	padding: 0;
 	margin: 0;
 }
 .container {
   position: relative;
-  text-align: center;
-  color: white;
+  color: black;
 }
-body{
+.centered{
 	height: 100%;
-}
-body:hover{
-	border: 20px solid #4ad6db;
-}
-.container img{
-	height: 100%;
-}
-.centered {
+  opacity: 0;
+  font-size: 10px;
+  transition: 1s;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 600px;
-  display: none;
+  display: flex;
+  margin: 10px 20px;
 }
 .centered h1{
 	font-family: 'Merienda', cursive;
 }
 .centered h2{
 	font-family: 'Allura', cursive;
+}
+h1.lugar{
+	align-self: flex-start;
+}
+h2.lugar{
+	align-self: flex-end;
+}
+.container:hover .centered{
+	font-size: 32px;
+}
+.container:hover .centered{
+	opacity: 1;
+	transform: rotate(0deg);
+}
+.container:hover img{
+	transform: scale(1.1);
 }
