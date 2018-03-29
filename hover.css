@@ -15,10 +15,23 @@ font-family: 'Allura', cursive;*/
 	font-family: 'Allura', cursive;
 	position: absolute;
 }*/
+*{
+	padding: 0;
+	margin: 0;
+}
 .container {
   position: relative;
   text-align: center;
   color: white;
+}
+body{
+	height: 100%;
+}
+body:hover{
+	border: 20px solid #4ad6db;
+}
+.container img{
+	height: 100%;
 }
 .centered {
   position: absolute;
@@ -26,6 +39,7 @@ font-family: 'Allura', cursive;*/
   left: 50%;
   transform: translate(-50%, -50%);
   height: 600px;
+  display: none;
 }
 .centered h1{
 	font-family: 'Merienda', cursive;
